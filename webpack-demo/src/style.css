@@ -1,44 +1,49 @@
-h1{
+h1 {
   text-align: center;
 }
-section{
+
+section {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-h2{
+
+h2 {
   margin: 0;
   padding: 2%;
   background-color: white;
 }
+
 button {
   background-color: transparent;
   border: none;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.todolist-container{
+
+.todolist-container {
   width: 100%;
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: repeat(auto-fit, auto);
-  background-color: whitesmoke;
   row-gap: 2px;
   box-shadow: 1px 1px 5px gray;
 }
-.task{
+
+.task {
   display: flex;
   padding: 3%;
   background-color: white;
 }
-.todo-list{
+
+.todo-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -47,26 +52,29 @@ button {
   background-color: whitesmoke;
   row-gap: 2px;
 }
-.todo-input{
+
+.todo-input {
   border: none;
   padding: 3%;
   background-color: white;
   cursor: pointer;
 }
+
 input::placeholder {
   font-style: italic;
 }
-.task-check{
+
+.task-check {
   margin-right: 2%;
 }
 
-.list{
+.list {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
 
-.clear-container{
+.clear-container {
   text-align: center;
 }
 
