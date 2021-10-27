@@ -31,7 +31,7 @@ const todo = [
 function todoList(){
   let todoListContent = '';
   todo.forEach((item) =>{
-    todoListContent += `<li class="task"><input class="task-check" type="checkbox"><span>${item.description}</span></li>`;
+    todoListContent += `<li class="task"><input class="task-check" type="checkbox"><span class="list">${item.description}</span><i class='fa fa-ellipsis-v' style="margin-left:auto"></i></li>`;
   });
   document.querySelector('.todo-list').innerHTML = todoListContent;
 }
