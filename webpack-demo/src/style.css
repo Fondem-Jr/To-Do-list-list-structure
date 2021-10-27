@@ -37,6 +37,29 @@ button {
   box-shadow: 1px 1px 5px gray;
 }
 
+.input-icon {
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: white;
+}
+
+.icon {
+  width: 15px;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.fa:hover {
+  cursor: move;
+}
+
+.icon1 {
+  float: right;
+  color: rgb(142, 147, 151);
+  cursor: pointer;
+  font-size: medium;
+}
+
 .task {
   display: flex;
   padding: 3%;
@@ -54,8 +77,9 @@ button {
 }
 
 .todo-input {
+  width: 85%;
   border: none;
-  padding: 3%;
+  padding: 10px;
   background-color: white;
   cursor: pointer;
 }
