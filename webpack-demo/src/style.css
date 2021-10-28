@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
 }
+
 section {
   width: 100%;
   display: flex;
@@ -18,6 +19,7 @@ button {
   background-color: transparent;
   border: none;
 }
+
 .container {
   width: 100%;
   max-width: 500px;
@@ -25,6 +27,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
+
 .todolist-container {
   width: 100%;
   background-color: whitesmoke;
@@ -33,16 +36,19 @@ button {
   row-gap: 2px;
   box-shadow: 1px 1px 5px gray;
 }
+
 .icon {
   width: 16px;
   width: 15px;
   padding-left: 5%;
 }
+
 .input-icon {
   width: 100%;
   margin-bottom: 1px;
   background-color: white;
 }
+
 .icon1 {
   float: right;
   color: rgb(142, 147, 151);
@@ -50,11 +56,13 @@ button {
   font-size: medium;
   padding-right: 2%;
 }
+
 .task {
   background-color: white;
   display: flex;
   padding: 3%;
 }
+
 .todo-list {
   padding: 0;
   margin: 0;
@@ -64,6 +72,7 @@ button {
   background-color: whitesmoke;
   row-gap: 2px;
 }
+
 .todo-input {
   width: 85%;
   border: none;
@@ -78,12 +87,15 @@ button {
   outline: none;
   border: 2px solid rgb(103, 160, 11);
 }
+
 input::placeholder {
   font-style: italic;
 }
+
 .task-check {
   margin-right: 2%;
 }
+
 .list {
   padding: 0;
   margin: 0;
@@ -93,6 +105,7 @@ input::placeholder {
   background-color: whitesmoke;
   row-gap: 2px;
 }
+
 .clearer {
   padding: 2%;
   cursor: pointer;
@@ -119,7 +132,6 @@ input::placeholder {
   border: none;
   box-sizing: border-box;
   width: 100%;
- 
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
@@ -142,9 +154,6 @@ input::placeholder {
   padding-left: 10%;
 }
 
-
 .completed {
   text-decoration: line-through;
 }
-
-
