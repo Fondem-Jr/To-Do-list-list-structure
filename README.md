@@ -4,6 +4,8 @@
 
 "To-do list" is used to lists the things that you need to do and allows you to mark them as complete. 
 This is built using ES6 and Webpack!
+
+![screenshot](./webpack-demo/src/assets/todo.jpeg)
 ## Built With 🔨
 
 - JavaScript
@@ -13,7 +15,6 @@ This is built using ES6 and Webpack!
 - Visual Studio Code
 - Git & Github
 ## Live Demo
-
 ## Getting Started
 
 👤 **Fondem Junior**
