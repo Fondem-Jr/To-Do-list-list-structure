@@ -1,12 +1,8 @@
-import * as task from './status.js';
+import * as task from './populate.js';
+import * as stat from './status.js';
 import './style.css';
 
-let list = [
-  { description: 'Set up a new project with webpack', isCompleted: false, index: 0 },
-  { description: 'Set up a new project with webpack', isCompleted: false, index: 1 },
-  { description: 'Create an index.js file', isCompleted: false, index: 2 },
-  { description: 'Write a function to iterate over the tasks array and populate an HTML', isCompleted: false, index: 3 },
-];
+let list = [];
 
 function todoList() {
   if (window.localStorage.getItem('localTasks')) {
@@ -24,7 +20,7 @@ function todoList() {
     checkbox.type = 'checkbox';
     checkbox.classList.add('task-check');
     checkbox.addEventListener('click', () => {
-      task.status(item, list);
+      stat.status(item, list);
       todoList();
     });
     checkbox.checked = item.isCompleted;
@@ -35,7 +31,7 @@ function todoList() {
     taskText.addEventListener('change', () => {
       if (taskText.value.length > 0) {
         item.description = taskText.value;
-        task.saveLocal(list);
+        stat.saveLocal(list);
       }
     });
     taskElement.appendChild(taskText);
