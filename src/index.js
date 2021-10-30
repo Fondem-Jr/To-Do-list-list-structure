@@ -36,13 +36,28 @@ function todoList() {
       }
     });
     taskElement.appendChild(taskText);
-    
+
     const dragIcon = document.createElement('button');
     dragIcon.classList = 'far fa-trash-alt deleteBtn';
     taskElement.appendChild(dragIcon);
     taskElement.draggable = 'true';
     document.querySelector('.todo-list').appendChild(taskElement);
-  });  
+  });
+}
+
+function removeItem(e) {
+  if (!e.target.classList.contains('deleteBtn')) {
+    return;
+  }
+  const btn = e.target;
+  list.forEach((task) => {
+    if (task.description === btn.parentElement.children[1].value) {
+      list.splice(list.indexOf(task), 1);
+    }
+  });
+  btn.closest('li').remove();
+  task.updateIndex(list);
+  stat.saveLocal(list);
 }
 
 listEl.addEventListener('click', removeItem);
@@ -56,19 +71,3 @@ document.querySelector('.clearer').addEventListener('click', () => {
   task.removeDone(list);
   todoList();
 });
-
-function removeItem(e) { 
-  if (!e.target.classList.contains('deleteBtn')){
-    return;
-  }
-  const btn = e.target;
-  list.forEach((task) => {
-    if(task.description === btn.parentElement.children[1].value){
-      list.splice(list.indexOf(task), 1);
-    }
-  });
-  console.table(btn.parentElement.children);
-  btn.closest("li").remove();
-  task.updateIndex(list);
-  stat.saveLocal(list);
- }

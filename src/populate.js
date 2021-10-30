@@ -1,7 +1,7 @@
 import { saveLocal } from './status.js';
 
 export function add(list) {
-  list.push({ description: document.querySelector('#newTask').value, isCompleted: false, index: list.length + 1});
+  list.push({ description: document.querySelector('#newTask').value, isCompleted: false, index: list.length + 1 });
   document.querySelector('#newTask').value = '';
   saveLocal(list);
 }
